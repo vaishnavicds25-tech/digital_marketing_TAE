@@ -1,0 +1,881 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Explore computer courses, digital skills, programming classes and career training. Enquire today to find the right course for you.">
+<meta name="keywords" content="computer training institute, computer courses, programming classes, digital marketing course, web development course">
+<title>SkillBridge Computer Institute | Digital Marketing Project</title>
+
+<style>
+:root {
+  --primary: #2447a8;
+  --secondary: #3978e8;
+  --accent: #16b89a;
+  --light: #f3f6fc;
+  --dark: #1b2540;
+  --text: #536078;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--dark);
+  background: #fff;
+  line-height: 1.7;
+}
+
+header {
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 3px 18px #162b5510;
+}
+
+nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  color: var(--primary);
+  font-weight: 800;
+  font-size: 22px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 17px;
+}
+
+.nav-links a {
+  font-size: 13px;
+  color: var(--dark);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: var(--secondary);
+}
+
+section {
+  padding: 70px 24px;
+  scroll-margin-top: 75px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero {
+  background: linear-gradient(130deg, #172c68, #3978e8);
+  color: white;
+  padding: 95px 24px;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr;
+  align-items: center;
+  gap: 40px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 5vw, 55px);
+  line-height: 1.15;
+  margin: 15px 0 20px;
+}
+
+.hero p {
+  color: #e1eaff;
+  max-width: 600px;
+}
+
+.hero-art {
+  background: #ffffff17;
+  border: 1px solid #ffffff40;
+  padding: 35px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.hero-art .computer {
+  font-size: 95px;
+}
+
+.hero-art h3 {
+  margin: 10px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 24px;
+  background: var(--accent);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 9px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid white;
+  margin-left: 8px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-heading h2 {
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.section-heading p {
+  color: var(--text);
+}
+
+.bg-light {
+  background: var(--light);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #e7ebf3;
+  box-shadow: 0 7px 25px #182c5210;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.card p, .card li {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.card ul {
+  padding-left: 20px;
+  margin-top: 12px;
+}
+
+.icon {
+  font-size: 32px;
+}
+
+.info-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.info-item {
+  padding: 20px;
+  border-radius: 12px;
+  background: var(--light);
+}
+
+.info-item strong {
+  display: block;
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.tag {
+  display: inline-block;
+  margin: 5px 4px 5px 0;
+  background: #e8efff;
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.schedule {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 22px;
+  background: white;
+}
+
+.schedule th, .schedule td {
+  border: 1px solid #e1e6f0;
+  padding: 13px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.schedule th {
+  background: var(--primary);
+  color: white;
+}
+
+.highlight {
+  background: linear-gradient(120deg, #e9f0ff, #e4fbf5);
+  padding: 35px;
+  border-radius: 18px;
+  text-align: center;
+}
+
+.highlight h2 {
+  margin-bottom: 10px;
+}
+
+.enquiry-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 35px;
+  align-items: start;
+}
+
+form {
+  background: white;
+  border: 1px solid #e4e8f0;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 7px 25px #182c5210;
+}
+
+label {
+  display: block;
+  margin: 12px 0 5px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8dfec;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 14px;
+  background: white;
+}
+
+textarea {
+  resize: vertical;
+}
+
+form .btn {
+  width: 100%;
+}
+
+#form-message {
+  margin-top: 15px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+footer {
+  background: #172344;
+  color: white;
+  padding: 35px 24px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 13px;
+  color: #cbd5e8;
+  margin-top: 7px;
+}
+
+@media (max-width: 850px) {
+  nav {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .hero-content, .enquiry-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .grid, .info-list {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 50px 18px;
+  }
+
+  .hero {
+    padding: 65px 18px;
+  }
+
+  .btn-outline {
+    margin-left: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <a href="#home" class="logo">SkillBridge Institute</a>
+    <div class="nav-links">
+      <a href="#business">Business</a>
+      <a href="#audience">Audience</a>
+      <a href="#seo">SEO</a>
+      <a href="#social">Social Media</a>
+      <a href="#advertisement">Advertisement</a>
+      <a href="#email">Email</a>
+      <a href="#suggestions">Suggestions</a>
+      <a href="#enquiry">Enquiry</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div>
+        <span class="eyebrow">Digital Marketing Project</span>
+        <h1>Increase Customer Enquiries for a Computer Training Institute</h1>
+        <p>
+          Learn practical computer skills, programming, web development
+          and digital marketing. Discover the right course to build
+          your skills and prepare for new career opportunities.
+        </p>
+        <a class="btn" href="#enquiry">Enquire About Courses</a>
+        <a class="btn btn-outline" href="#courses">Explore Courses</a>
+      </div>
+  </section>
+
+  <section id="business">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">01 — Business Profile</span>
+        <h2>About Our Institute</h2>
+        <p>A digital business profile to introduce the institute and its services.</p>
+      </div>
+
+      <div class="info-list">
+        <div class="info-item">
+          <strong>Business Name</strong>
+          SkillBridge Computer Training Institute
+        </div>
+        <div class="info-item">
+          <strong>Business Type</strong>
+          Computer Education and Professional Skills Training
+        </div>
+        <div class="info-item">
+          <strong>Services Offered</strong>
+          Computer fundamentals, MS Office, programming, web development
+          and digital marketing courses.
+        </div>
+        <div class="info-item">
+          <strong>Unique Selling Proposition (USP)</strong>
+          Practical training, beginner-friendly learning, guided projects
+          and career-oriented computer education.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="audience" class="bg-light">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">02 — Target Audience</span>
+        <h2>Who Are Our Potential Students?</h2>
+        <p>Identifying the audience most likely to enquire about courses.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🎓</div>
+          <h3>College Students</h3>
+          <p>Age: 18–25 years</p>
+          <p>Interested in programming, web development, projects and
+          practical skills to strengthen their resumes.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💼</div>
+          <h3>Job Seekers</h3>
+          <p>Age: 20–35 years</p>
+          <p>Looking for computer proficiency, office software,
+          digital skills and career-development opportunities.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🏫</div>
+          <h3>School Students</h3>
+          <p>Age: 14–18 years</p>
+          <p>Want to learn computer basics, office applications and
+          foundational coding skills.</p>
+        </div>
+        <div class="card">
+          <div class="icon">👩‍💻</div>
+          <h3>Working Professionals</h3>
+          <p>Age: 22–40 years</p>
+          <p>Want to upgrade their computer knowledge and learn
+          relevant digital tools for their jobs.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🚀</div>
+          <h3>Entrepreneurs</h3>
+          <p>Age: 22–45 years</p>
+          <p>Interested in digital marketing, website creation and
+          online business management.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🔄</div>
+          <h3>Career Changers</h3>
+          <p>Age: 21–40 years</p>
+          <p>Seeking new technical skills to explore different
+          career paths and opportunities.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Our Courses</span>
+        <h2>Choose a Course That Fits Your Goals</h2>
+        <p>Example courses to promote and generate student enquiries.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🖥️</div>
+          <h3>Basic Computer Course</h3>
+          <p>Learn computer fundamentals, file management, internet usage
+          and essential digital skills.</p>
+          <a class="btn" href="#enquiry">Ask About This Course</a>
+        </div>
+        <div class="card">
+          <div class="icon">📊</div>
+          <h3>MS Office Course</h3>
+          <p>Develop practical skills in word processing, spreadsheets,
+          presentations and office productivity tools.</p>
+          <a class="btn" href="#enquiry">Ask About This Course</a>
+        </div>
+        <div class="card">
+          <div class="icon">💻</div>
+          <h3>Web Development</h3>
+          <p>Learn the foundations of HTML, CSS and JavaScript through
+          practical website-building projects.</p>
+          <a class="btn" href="#enquiry">Ask About This Course</a>
+        </div>
+        <div class="card">
+          <div class="icon">👨‍💻</div>
+          <h3>Programming Fundamentals</h3>
+          <p>Understand programming logic, problem-solving and
+          foundational coding concepts.</p>
+          <a class="btn" href="#enquiry">Ask About This Course</a>
+        </div>
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>Digital Marketing</h3>
+          <p>Explore SEO, social media marketing, content strategy
+          and online advertising fundamentals.</p>
+          <a class="btn" href="#enquiry">Ask About This Course</a>
+        </div>
+        <div class="card">
+          <div class="icon">📈</div>
+          <h3>Advanced Excel</h3>
+          <p>Learn formulas, data organization, reporting and
+          spreadsheet analysis.</p>
+          <a class="btn" href="#enquiry">Ask About This Course</a>
+        </div>
+      </div>
+      <p style="margin-top:18px;color:#536078;font-size:13px;">
+        Note: Course offerings are illustrative. Replace them with the
+        actual courses offered by your selected institute.
+      </p>
+    </div>
+  </section>
+
+  <section id="seo" class="bg-light">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">03 — Search Engine Optimization</span>
+        <h2>SEO Strategy</h2>
+        <p>Help potential students discover the institute through search engines.</p>
+      </div>
+
+      <div class="card">
+        <h3>Short-Tail Keywords</h3>
+        <div>
+          <span class="tag">Computer Courses</span>
+          <span class="tag">Computer Institute</span>
+          <span class="tag">Coding Classes</span>
+          <span class="tag">Web Development</span>
+          <span class="tag">Digital Marketing</span>
+          <span class="tag">Computer Training</span>
+        </div>
+
+        <h3 style="margin-top:22px;">Long-Tail Keywords</h3>
+        <div>
+          <span class="tag">Best computer training institute near me</span>
+          <span class="tag">Basic computer courses for beginners</span>
+          <span class="tag">Web development classes for students</span>
+          <span class="tag">Affordable computer courses in my city</span>
+          <span class="tag">Digital marketing course for job seekers</span>
+          <span class="tag">Advanced Excel training institute</span>
+        </div>
+
+        <h3 style="margin-top:22px;">SEO Approach</h3>
+        <ul>
+          <li>Use course-related keywords in page titles and headings.</li>
+          <li>Create individual pages for important courses.</li>
+          <li>Publish helpful articles about computer skills and careers.</li>
+          <li>Optimize the Google Business Profile with accurate information.</li>
+          <li>Add clear enquiry links and mobile-friendly contact details.</li>
+          <li>Track website visits, search performance and enquiry conversions.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="social">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">04 — Social Media Marketing</span>
+        <h2>Connect With Potential Students</h2>
+        <p>Use educational content to build awareness and encourage enquiries.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">📸</div>
+          <h3>Instagram</h3>
+          <p>Share short computer tips, course videos, student projects,
+          class highlights and course announcements.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📘</div>
+          <h3>Facebook</h3>
+          <p>Publish course information, event announcements, educational
+          posts and updates for the local community.</p>
+        </div>
+        <div class="card">
+          <div class="icon">▶️</div>
+          <h3>YouTube</h3>
+          <p>Create beginner tutorials, software demonstrations,
+          sample lessons and course introduction videos.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💬</div>
+          <h3>WhatsApp Business</h3>
+          <p>Respond to course enquiries, share course details and
+          communicate with people who have opted in.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💼</div>
+          <h3>LinkedIn</h3>
+          <p>Share career-focused learning content, professional skills
+          and relevant course updates.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📍</div>
+          <h3>Google Business Profile</h3>
+          <p>Help local learners find the institute's location,
+          opening hours, contact details and reviews.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:25px;">
+        <h3>Sample Weekly Content Calendar</h3>
+        <table class="schedule">
+          <thead>
+            <tr><th>Day</th><th>Content</th><th>Objective</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Monday</td><td>Course Introduction</td><td>Awareness</td></tr>
+            <tr><td>Wednesday</td><td>Computer Tips or Tutorial</td><td>Engagement</td></tr>
+            <tr><td>Friday</td><td>Student Project or Course Video</td><td>Consideration</td></tr>
+            <tr><td>Sunday</td><td>FAQ and Enquiry Reminder</td><td>Lead Generation</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="advertisement" class="bg-light">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">05 —Advertising</span>
+        <h2>Digital Advertisement Strategy</h2>
+        <p>Reach relevant learners and turn their interest into course enquiries.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🔎</div>
+          <h3>Google Search Ads</h3>
+          <p>Target relevant searches for computer classes, coding
+          courses and training institutes in the service area.</p>
+          <p><strong>Goal:</strong> Relevant website visits and enquiries.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>Instagram & Facebook Ads</h3>
+          <p>Promote course introductions and practical learning content
+          to suitable audiences in the local area.</p>
+          <p><strong>Goal:</strong> Awareness and prospective students.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🎬</div>
+          <h3>Video Advertisements</h3>
+          <p>Show sample lessons, classroom activities and student
+          projects to explain the learning experience.</p>
+          <p><strong>Goal:</strong> Interest and course consideration.</p>
+        </div>
+      </div>
+
+      <div class="highlight" style="margin-top:28px;">
+        <h2>Campaign Concept: Start Learning Today</h2>
+        <p>Discover practical computer courses for your education,
+        career development and digital skills.</p>
+        <a href="#enquiry" class="btn">Request Course Information</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="email">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">06 — Email Marketing</span>
+        <h2>Sample Course Enquiry Follow-Up Email</h2>
+        <p>Build relationships with prospective students through useful information.</p>
+      </div>
+
+      <div class="card">
+        <p><strong>Subject:</strong> Explore Computer Courses at SkillBridge Institute</p>
+        <br>
+        <p>Dear Student,</p>
+        <p>Thank you for your interest in SkillBridge Computer Training
+        Institute.</p>
+        <p>We offer learning opportunities in computer fundamentals,
+        MS Office, web development, programming and digital marketing.
+        Our aim is to help learners develop practical digital skills
+        through structured learning and practice.</p>
+
+        <h3>Why Explore Our Courses?</h3>
+        <ul>
+          <li>Course options for different skill levels.</li>
+          <li>Practical exercises and learning projects.</li>
+          <li>Guidance to help you choose a suitable course.</li>
+          <li>Information about course schedules and fees on request.</li>
+        </ul>
+
+        <p style="margin-top:16px;">Reply to this email or contact our
+        institute to learn more about available courses, fees and timings.</p>
+        <p style="margin-top:16px;">Warm regards,<br>
+        <strong>SkillBridge Computer Training Institute</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="suggestions" class="bg-light">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">07 — Suggestions</span>
+        <h2>Suggestions to Increase Customer Enquiries</h2>
+        <p>Practical digital marketing activities to attract prospective students.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🌐</div>
+          <h3>Improve the Website</h3>
+          <p>Provide clear course descriptions, contact information,
+          fees where appropriate and easy enquiry options.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📷</div>
+          <h3>Publish Useful Content</h3>
+          <p>Share tutorials, course demonstrations, student projects
+          and educational tips consistently.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⭐</div>
+          <h3>Collect Genuine Reviews</h3>
+          <p>Invite real students to share honest feedback about
+          their learning experience.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🎯</div>
+          <h3>Run Targeted Campaigns</h3>
+          <p>Test relevant advertisements and course-specific landing
+          pages to attract qualified enquiries.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⚡</div>
+          <h3>Respond Promptly</h3>
+          <p>Answer course questions quickly and provide accurate
+          information about schedules, fees and eligibility.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📊</div>
+          <h3>Measure Results</h3>
+          <p>Monitor enquiries, cost per enquiry, response rates
+          and enrolments to improve future campaigns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="enquiry">
+    <div class="container">
+      <div class="section-heading">
+        <span class="eyebrow">Student Enquiry</span>
+        <h2>Interested in a Computer Course?</h2>
+        <p>Complete this form to demonstrate how the institute can collect course enquiries.</p>
+      </div>
+
+      <div class="enquiry-layout">
+        <div>
+          <h2>Take the First Step</h2>
+          <p style="color:#536078;margin-top:12px;">
+            Choose a course that matches your interests. Ask about
+            course content, schedules, fees and learning requirements.
+          </p>
+
+          <div class="info-item" style="margin-top:20px;">
+            <strong>Course Guidance</strong>
+            Find a suitable course for your current skills and goals.
+          </div>
+          <div class="info-item" style="margin-top:12px;">
+            <strong>Flexible Enquiry</strong>
+            Submit your preferred course and questions.
+          </div>
+          <p style="font-size:12px;color:#536078;margin-top:16px;">
+            Replace the sample institute name and contact details with
+            verified business information before publishing.
+          </p>
+        </div>
+
+        <form id="enquiry-form">
+          <label for="name">Full Name *</label>
+          <input id="name" name="name" type="text"
+                 placeholder="Enter your full name" required>
+
+          <label for="phone">Phone Number *</label>
+          <input id="phone" name="phone" type="tel"
+                 placeholder="Enter your phone number"
+                 pattern="[0-9+() -]{7,20}" required>
+
+          <label for="email-address">Email Address</label>
+          <input id="email-address" name="email" type="email"
+                 placeholder="Enter your email address">
+
+          <label for="course">Select a Course *</label>
+          <select id="course" name="course" required>
+            <option value="">Choose a course</option>
+            <option>Basic Computer Course</option>
+            <option>MS Office Course</option>
+            <option>Web Development</option>
+            <option>Programming Fundamentals</option>
+            <option>Digital Marketing</option>
+            <option>Advanced Excel</option>
+            <option>Other / Need Guidance</option>
+          </select>
+
+          <label for="message">Your Question</label>
+          <textarea id="message" name="message" rows="4"
+                    placeholder="Ask about fees, timing or course details"></textarea>
+
+          <button type="submit" class="btn">Submit Enquiry</button>
+          <p id="form-message" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <h3>SkillBridge Computer Training Institute</h3>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+document.getElementById("enquiry-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const course = document.getElementById("course").value;
+
+  if (!name || !course) {
+    document.getElementById("form-message").textContent =
+      "Please complete the required fields.";
+    return;
+  }
+
+  document.getElementById("form-message").textContent =
+    "Thank you, " + name +
+    "! Your sample enquiry has been validated. Connect this form to a backend or enquiry service to receive submissions.";
+
+  this.reset();
+});
+</script>
+
+</body>
+</html>
